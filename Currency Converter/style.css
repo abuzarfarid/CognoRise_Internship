@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 10px;
+    background: linear-gradient(45deg, red, green, yellow);
+}
+
+.wrapper {
+    width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+    background: transparent;
+    box-shadow: 4px 4px 20px rgba(79, 7, 196, 0.05);
+}
+
+.wrapper:hover {
+    box-shadow: 2px 3px 10px red;
+    border-radius: 15px;
+    border: 2px dotted palevioletred;
+}
+
+.wrapper header {
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+    color: red;
+
+}
+
+.wrapper header:hover {
+    font-size: 30px;
+    color: black;
+    text-shadow: 2px 3px 10px yellow;
+}
+
+.wrapper form {
+    margin: 40px 0 20px 0;
+}
+
+form :where(input, select, button) {
+    width: 100%;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+}
+
+form p {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+form input {
+    height: 50px;
+    font-size: 17px;
+    color: red;
+    font-weight: bold;
+    padding: 0 15px;
+    border: 3px solid #0e0909;
+}
+form input:hover{
+    border: 3px solid rgb(6, 182, 144);
+    font-size: 30px;
+    
+}
+
+form .drop-list {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.drop-list .select-box {
+    display: flex;
+    width: 115px;
+    height: 45px;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: center;
+    border: 3px solid #040504;
+}
+
+.select-box img {
+    max-width: 21px;
+}
+
+.select-box select {
+    width: auto;
+    font-size: 16px;
+    background: none;
+    margin: 0 -5px 0 5px;
+}
+
+.select-box select::-webkit-scrollbar {
+    width: 8px;
+}
+
+.select-box select::-webkit-scrollbar-track {
+    background: #130b0b;
+}
+
+.select-box select::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 8px;
+    border-right: 2px solid #ffffff;
+}
+
+.drop-list .icon {
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 22px;
+}
+
+form .exchange-rate {
+    font-size: 17px;
+    margin: 20px 0 30px;
+}
+
+form button {
+    height: 52px;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+    background: #0a0a01;
+    transition: 0.3s ease;
+}
+
+form button:hover {
+    background:linear-gradient(45deg, red, green, yellow);
+}
